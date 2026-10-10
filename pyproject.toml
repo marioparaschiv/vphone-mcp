@@ -1,0 +1,31 @@
+[project]
+name = "vphone-mcp"
+version = "0.1.0"
+description = "One-tool MCP server for app work in a jailbroken vphone iOS VM: IPAs, tweaks, containers, logs"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Mario P." }]
+requires-python = ">=3.12"
+keywords = ["mcp", "ios", "vphone", "jailbreak", "tweaks", "claude"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "mcp>=2.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/marioparaschiv/vphone-mcp"
+Issues = "https://github.com/marioparaschiv/vphone-mcp/issues"
+
+[project.scripts]
+vphone-mcp = "vphone_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
